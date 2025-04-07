@@ -105,42 +105,77 @@
                     submitButton.disabled = true;
                     submitButton.innerText = 'Submitting...';
                     
-                    // TESTING ONLY - Skip actual API call
-                    console.log('Simulating API response');
-                    
-                    // Simulate successful submission
-                    setTimeout(() => {
+                    // Send the data to the actual API
+                    fetch('https://ddd-form-api-dc0c7b285f94.herokuapp.com/api/submit-form', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        mode: 'cors',
+                        body: JSON.stringify({
+                            influence: influence,
+                            email: email
+                        }),
+                    })
+                    .then(response => {
+                        console.log('API response status:', response.status);
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log('API response data:', data);
+                        
                         // Re-enable the submit button
                         submitButton.disabled = false;
                         submitButton.innerText = 'Submit';
                         
-                        // Show success message
-                        console.log('Showing thank you message');
-                        
-                        // Hide the form
-                        form.innerHTML = `
-                            <div style="text-align: center; padding: 2rem 0;">
-                                <div style="font-size: 3rem; color: #00703C; margin-bottom: 1rem;">
-                                    <i class="fas fa-check-circle"></i>
+                        if (data.success) {
+                            // Show success message
+                            console.log('Showing thank you message');
+                            
+                            // Hide the form
+                            form.innerHTML = `
+                                <div style="text-align: center; padding: 2rem 0;">
+                                    <div style="font-size: 3rem; color: #00703C; margin-bottom: 1rem;">
+                                        <i class="fas fa-check-circle"></i>
+                                    </div>
+                                    <h3 style="color: #00703C; margin-bottom: 1rem;">Thank You!</h3>
+                                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                                        We've received your submission about what you'd like direct influence over.
+                                    </p>
+                                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                                        Your input helps us shape a better democratic future.
+                                    </p>
+                                    <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
+                                        Storage: ${data.storage}, ID: ${data.id}
+                                    </p>
+                                    <button type="button" id="submit-another" style="background-color: #FF7F50; color: white; padding: 0.75rem 1.5rem; border: none; margin-top: 1rem;">
+                                        Submit Another Response
+                                    </button>
                                 </div>
-                                <h3 style="color: #00703C; margin-bottom: 1rem;">Thank You!</h3>
-                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
-                                    We've received your submission about what you'd like direct influence over.
-                                </p>
-                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
-                                    Your input helps us shape a better democratic future.
-                                </p>
-                                <button type="button" id="submit-another" style="background-color: #FF7F50; color: white; padding: 0.75rem 1.5rem; border: none; margin-top: 1rem;">
-                                    Submit Another Response
-                                </button>
-                            </div>
-                        `;
+                            `;
+                            
+                            // Add event listener to the "Submit Another" button
+                            document.getElementById('submit-another').addEventListener('click', function() {
+                                location.reload(); // Reload the page for simplicity
+                            });
+                        } else {
+                            // Show error message
+                            document.getElementById('form-error').textContent = data.message || 'Submission failed. Please try again.';
+                            document.getElementById('form-error').style.display = 'block';
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Fetch error:', error);
                         
-                        // Add event listener to the "Submit Another" button
-                        document.getElementById('submit-another').addEventListener('click', function() {
-                            location.reload(); // Reload the page for simplicity
-                        });
-                    }, 1000);
+                        // Re-enable the submit button
+                        submitButton.disabled = false;
+                        submitButton.innerText = 'Submit';
+                        
+                        // Show error message
+                        document.getElementById('form-error').textContent = 'An error occurred while submitting the form. Please try again.';
+                        document.getElementById('form-error').style.display = 'block';
+                    });
                 });
             } else {
                 console.error('Form element not found!');
