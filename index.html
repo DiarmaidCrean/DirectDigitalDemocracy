@@ -38,6 +38,29 @@
             <p>Direct Digital Democracy is dedicated to creating tools and platforms that enable direct citizen participation in democratic processes.</p>
         </section>
 
+        <section class="govuk-section" style="background-color: #f8f8f8; padding: 3rem 5%;">
+            <div class="govuk-grid">
+                <div class="govuk-grid-column-two-thirds">
+                    <div class="govuk-card" style="background-color: white; padding: 2rem;">
+                        <h3 style="color: var(--coral-primary); margin-bottom: 1.5rem;">What Would You Like to Influence?</h3>
+                        <form id="feedback-form" action="#" method="POST" style="margin-top: 2rem;">
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="influence" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">The first things I would want to directly influence would be:</label>
+                                <textarea id="influence" name="influence" rows="4" style="width: 100%; padding: 0.75rem; border: 2px solid var(--border-color); font-family: inherit; font-size: 1rem;" required></textarea>
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Email address:</label>
+                                <input type="email" id="email" name="email" style="width: 100%; padding: 0.75rem; border: 2px solid var(--border-color); font-family: inherit; font-size: 1rem;" required placeholder="Your email">
+                            </div>
+                            <button type="submit" class="govuk-button" style="margin-top: 1rem;">
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="donate" class="govuk-section" style="background-color: var(--coral-bg); padding: 4rem 5%;">
             <div class="govuk-grid">
                 <div class="govuk-grid-column-two-thirds">
