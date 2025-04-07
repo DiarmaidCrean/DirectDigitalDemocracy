@@ -260,10 +260,29 @@ document.addEventListener('DOMContentLoaded', function() {
                 submitButton.innerText = 'Submit';
                 
                 if (data.success) {
-                    // Show success message
-                    document.getElementById('form-success').style.display = 'block';
-                    // Clear the form
-                    form.reset();
+                    // Hide the form
+                    form.innerHTML = `
+                        <div style="text-align: center; padding: 2rem 0;">
+                            <div style="font-size: 3rem; color: #00703C; margin-bottom: 1rem;">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3 style="color: #00703C; margin-bottom: 1rem;">Thank You!</h3>
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                                We've received your submission about what you'd like direct influence over.
+                            </p>
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                                Your input helps us shape a better democratic future.
+                            </p>
+                            <button type="button" id="submit-another" class="govuk-button" style="margin-top: 1rem;">
+                                Submit Another Response
+                            </button>
+                        </div>
+                    `;
+                    
+                    // Add event listener to the "Submit Another" button
+                    document.getElementById('submit-another').addEventListener('click', function() {
+                        location.reload(); // Reload the page for simplicity
+                    });
                 } else {
                     // Show error message
                     document.getElementById('form-error').style.display = 'block';
