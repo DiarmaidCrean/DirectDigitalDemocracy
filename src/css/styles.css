@@ -21,7 +21,7 @@
 }
 
 body {
-    font-family: "GDS Transport", arial, sans-serif;
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     color: var(--text-color);
     background-color: var(--background-color);
