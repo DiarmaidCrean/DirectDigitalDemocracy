@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.innerText = 'Submitting...';
             
             // Send the data to the API
-            fetch('https://YOUR_API_URL_HERE/api/submit-form', {
+            fetch('https://ddd-form-api-dc0c7b285f94.herokuapp.com/api/submit-form', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
