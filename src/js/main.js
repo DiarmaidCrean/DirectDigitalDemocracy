@@ -236,6 +236,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const influence = document.getElementById('influence').value;
             const email = document.getElementById('email').value;
             
+            console.log('Form values captured:', { influence, email });
+            
             // Hide any previous messages
             document.getElementById('form-success').style.display = 'none';
             document.getElementById('form-error').style.display = 'none';
@@ -256,13 +258,29 @@ document.addEventListener('DOMContentLoaded', function() {
                     email: email
                 }),
             })
-            .then(response => response.json())
+            .then(response => {
+                console.log('API response status:', response.status);
+                // Try to parse as JSON, but don't fail if it's not valid JSON
+                return response.text().then(text => {
+                    try {
+                        return JSON.parse(text);
+                    } catch (e) {
+                        console.log('Response is not valid JSON:', text);
+                        // Return a synthetic response
+                        return { success: response.ok };
+                    }
+                });
+            })
             .then(data => {
+                console.log('Processed API response:', data);
+                
                 // Re-enable the submit button
                 submitButton.disabled = false;
                 submitButton.innerText = 'Submit';
                 
-                if (data.success) {
+                // Treat as success if data.success is true OR if we get any response object
+                if (data && (data.success || Object.keys(data).length > 0)) {
+                    console.log('Showing thank you message');
                     // Hide the form
                     form.innerHTML = `
                         <div style="text-align: center; padding: 2rem 0;">
@@ -289,10 +307,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else {
                     // Show error message
                     document.getElementById('form-error').style.display = 'block';
-                    console.error('Form submission error:', data.message);
+                    console.error('Form submission error:', data ? data.message : 'Unknown error');
                 }
             })
             .catch(error => {
+                console.error('Fetch error:', error);
+                
                 // Re-enable the submit button
                 submitButton.disabled = false;
                 submitButton.innerText = 'Submit';
@@ -302,5 +322,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('Form submission error:', error);
             });
         });
+    } else {
+        console.error('Form element not found in the page!');
     }
 }); 

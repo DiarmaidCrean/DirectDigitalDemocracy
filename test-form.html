@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .test-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea, input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #FF7F50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .message {
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 4px;
+            display: none;
+        }
+        .success {
+            background-color: #F3F9F5;
+            color: #00703C;
+            border-left: 5px solid #00703C;
+        }
+        .error {
+            background-color: #FEF7F7;
+            color: #D4351C;
+            border-left: 5px solid #D4351C;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-form">
+        <h2>Test Form</h2>
+        <form id="feedback-form">
+            <div>
+                <label for="influence">What would you like direct influence over?</label>
+                <textarea id="influence" name="influence" rows="4" required></textarea>
+            </div>
+            <div>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" required placeholder="Your email">
+            </div>
+            <button type="submit">Submit</button>
+            <div id="form-success" class="message success">
+                Thank you for your submission! We value your input.
+            </div>
+            <div id="form-error" class="message error">
+                Sorry, there was an error submitting your response. Please try again later.
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Debug log to confirm script is running
+        console.log('Form test script is running');
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            // Debug log on DOM loaded
+            console.log('DOM fully loaded');
+            
+            // Form submission handler
+            const form = document.getElementById('feedback-form');
+            if (form) {
+                console.log('Form found in document');
+                
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    console.log('Form submit event triggered');
+                    
+                    // Get form values
+                    const influence = document.getElementById('influence').value;
+                    const email = document.getElementById('email').value;
+                    
+                    console.log('Form values:', { influence, email });
+                    
+                    // Hide any previous messages
+                    document.getElementById('form-success').style.display = 'none';
+                    document.getElementById('form-error').style.display = 'none';
+                    
+                    // Disable the submit button while processing
+                    const submitButton = form.querySelector('button[type="submit"]');
+                    submitButton.disabled = true;
+                    submitButton.innerText = 'Submitting...';
+                    
+                    // TESTING ONLY - Skip actual API call
+                    console.log('Simulating API response');
+                    
+                    // Simulate successful submission
+                    setTimeout(() => {
+                        // Re-enable the submit button
+                        submitButton.disabled = false;
+                        submitButton.innerText = 'Submit';
+                        
+                        // Show success message
+                        console.log('Showing thank you message');
+                        
+                        // Hide the form
+                        form.innerHTML = `
+                            <div style="text-align: center; padding: 2rem 0;">
+                                <div style="font-size: 3rem; color: #00703C; margin-bottom: 1rem;">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <h3 style="color: #00703C; margin-bottom: 1rem;">Thank You!</h3>
+                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                                    We've received your submission about what you'd like direct influence over.
+                                </p>
+                                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                                    Your input helps us shape a better democratic future.
+                                </p>
+                                <button type="button" id="submit-another" style="background-color: #FF7F50; color: white; padding: 0.75rem 1.5rem; border: none; margin-top: 1rem;">
+                                    Submit Another Response
+                                </button>
+                            </div>
+                        `;
+                        
+                        // Add event listener to the "Submit Another" button
+                        document.getElementById('submit-another').addEventListener('click', function() {
+                            location.reload(); // Reload the page for simplicity
+                        });
+                    }, 1000);
+                });
+            } else {
+                console.error('Form element not found!');
+            }
+        });
+    </script>
+</body>
+</html> 
