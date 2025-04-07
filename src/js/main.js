@@ -220,4 +220,65 @@ style.textContent = `
         }
     }
 `;
-document.head.appendChild(style); 
+document.head.appendChild(style);
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Form submission handler
+    const form = document.getElementById('feedback-form');
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Get form values
+            const influence = document.getElementById('influence').value;
+            const email = document.getElementById('email').value;
+            
+            // Hide any previous messages
+            document.getElementById('form-success').style.display = 'none';
+            document.getElementById('form-error').style.display = 'none';
+            
+            // Disable the submit button while processing
+            const submitButton = form.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+            submitButton.innerText = 'Submitting...';
+            
+            // Send the data to the API
+            fetch('https://YOUR_API_URL_HERE/api/submit-form', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    influence: influence,
+                    email: email
+                }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Re-enable the submit button
+                submitButton.disabled = false;
+                submitButton.innerText = 'Submit';
+                
+                if (data.success) {
+                    // Show success message
+                    document.getElementById('form-success').style.display = 'block';
+                    // Clear the form
+                    form.reset();
+                } else {
+                    // Show error message
+                    document.getElementById('form-error').style.display = 'block';
+                    console.error('Form submission error:', data.message);
+                }
+            })
+            .catch(error => {
+                // Re-enable the submit button
+                submitButton.disabled = false;
+                submitButton.innerText = 'Submit';
+                
+                // Show error message
+                document.getElementById('form-error').style.display = 'block';
+                console.error('Form submission error:', error);
+            });
+        });
+    }
+}); 
