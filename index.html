@@ -112,5 +112,79 @@
     </footer>
 
     <script src="src/js/main.js"></script>
+    
+    <!-- Direct form handler script -->
+    <script>
+        // Wait for the document to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Direct form handler script loaded');
+            
+            // Get the form element
+            const form = document.getElementById('feedback-form');
+            
+            if (form) {
+                console.log('Form found by direct handler');
+                
+                // Add submit event listener
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    console.log('Form submitted via direct handler');
+                    
+                    // Get form values
+                    const influence = document.getElementById('influence').value;
+                    const email = document.getElementById('email').value;
+                    
+                    // Show thank you message directly
+                    form.innerHTML = `
+                        <div style="text-align: center; padding: 2rem 0;">
+                            <div style="font-size: 3rem; color: #00703C; margin-bottom: 1rem;">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3 style="color: #00703C; margin-bottom: 1rem;">Thank You!</h3>
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                                We've received your submission about what you'd like direct influence over.
+                            </p>
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                                Your input helps us shape a better democratic future.
+                            </p>
+                            <button type="button" id="submit-another-direct" class="govuk-button" style="margin-top: 1rem;">
+                                Submit Another Response
+                            </button>
+                        </div>
+                    `;
+                    
+                    // API submission (will still happen in the background)
+                    fetch('https://ddd-form-api-dc0c7b285f94.herokuapp.com/api/submit-form', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        mode: 'cors',
+                        body: JSON.stringify({
+                            influence: influence,
+                            email: email
+                        }),
+                    }).then(response => {
+                        console.log('API response from direct handler:', response.status);
+                    }).catch(error => {
+                        console.error('API error from direct handler:', error);
+                    });
+                    
+                    // Add event listener for the "submit another" button
+                    setTimeout(function() {
+                        const reloadButton = document.getElementById('submit-another-direct');
+                        if (reloadButton) {
+                            reloadButton.addEventListener('click', function() {
+                                window.location.reload();
+                            });
+                        }
+                    }, 100);
+                });
+            } else {
+                console.error('Form not found by direct handler');
+            }
+        });
+    </script>
 </body>
 </html>
