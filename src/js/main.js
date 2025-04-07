@@ -293,10 +293,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 `;
                 
-                // Add event listener to the "Submit Another" button
-                document.getElementById('submit-another').addEventListener('click', function() {
-                    location.reload(); // Reload the page for simplicity
-                });
+                // Add event listener to the "Submit Another" button after a short delay
+                // to ensure the button is properly added to the DOM
+                setTimeout(function() {
+                    const submitAnotherBtn = document.getElementById('submit-another');
+                    if (submitAnotherBtn) {
+                        submitAnotherBtn.addEventListener('click', function() {
+                            location.reload(); // Reload the page for simplicity
+                        });
+                    }
+                }, 100);
             })
             .catch(error => {
                 console.error('Fetch error:', error);
@@ -325,10 +331,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 `;
                 
-                // Add event listener to the "Submit Another" button
-                document.getElementById('submit-another').addEventListener('click', function() {
-                    location.reload(); // Reload the page for simplicity
-                });
+                // Add event listener to the "Submit Another" button after a short delay
+                // to ensure the button is properly added to the DOM
+                setTimeout(function() {
+                    const submitAnotherBtn = document.getElementById('submit-another');
+                    if (submitAnotherBtn) {
+                        submitAnotherBtn.addEventListener('click', function() {
+                            location.reload(); // Reload the page for simplicity
+                        });
+                    }
+                }, 100);
             });
         });
     } else {
