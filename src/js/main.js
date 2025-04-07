@@ -223,6 +223,9 @@ style.textContent = `
 document.head.appendChild(style);
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Debug message
+    console.log('main.js loaded successfully - version with thank you message');
+    
     // Form submission handler
     const form = document.getElementById('feedback-form');
     if (form) {
