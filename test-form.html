@@ -57,11 +57,11 @@
         <form id="feedback-form">
             <div>
                 <label for="influence">What would you like direct influence over?</label>
-                <textarea id="influence" name="influence" rows="4" required></textarea>
+                <textarea id="influence" name="influence" rows="4" required autocomplete="off"></textarea>
             </div>
             <div>
                 <label for="email">Email address:</label>
-                <input type="email" id="email" name="email" required placeholder="Your email">
+                <input type="email" id="email" name="email" required placeholder="Your email" autocomplete="email">
             </div>
             <button type="submit">Submit</button>
             <div id="form-success" class="message success">
