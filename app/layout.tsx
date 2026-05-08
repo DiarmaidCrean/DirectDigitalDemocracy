@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: "Direct Digital Democracy",
   description:
     "Build a citizen owned app to better instruct our elected political leaders.",
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "Direct Digital Democracy",
     description:
@@ -31,6 +34,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={publicSans.variable}>
+      <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body className="font-sans antialiased">
         <Nav />
         <main>{children}</main>
