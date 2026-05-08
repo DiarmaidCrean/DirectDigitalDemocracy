@@ -17,22 +17,30 @@ export default function Home() {
               right moment.
             </p>
             <p>
-              The idea is simple. Five issues. Directly decided by citizens.
+              The idea is simple. Six issues. Directly decided by citizens.
               Changed whenever the politics moves.
             </p>
             <p>
-              If enough of us agreed on just five priorities and made our
+              If enough of us agreed on just six priorities and made our
               position clear, the influence on the political process would be
               considerable. A standing instruction from a citizen community
               that isn&apos;t going away.
             </p>
           </div>
-          <Link
-            href="#donate"
-            className="inline-block bg-[#FF7F50] text-white font-semibold px-8 py-3 hover:bg-[#E66B3D] transition-colors no-underline"
-          >
-            I support this
-          </Link>
+          <div className="flex flex-wrap gap-4">
+            <Link
+              href="#donate"
+              className="inline-block bg-[#FF7F50] text-white font-semibold px-8 py-3 hover:bg-[#E66B3D] transition-colors no-underline"
+            >
+              I support this
+            </Link>
+            <Link
+              href="/issues"
+              className="inline-block border-2 border-[#FF7F50] text-[#FF7F50] font-semibold px-8 py-3 hover:bg-[#FFF5F2] transition-colors no-underline"
+            >
+              See the six issues
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -59,7 +67,7 @@ export default function Home() {
           </h2>
           <div className="bg-white p-8 border border-[#B1B4B6]">
             <h3 className="text-xl font-semibold text-[#FF7F50] mb-6">
-              What would be your suggestion for one of the five? And why?
+              What would be your suggestion for one of the six? And why?
             </h3>
             <InfluenceForm />
           </div>
@@ -80,7 +88,7 @@ export default function Home() {
 
           <div className="bg-white p-6 border border-[#B1B4B6] mb-6">
             <h3 className="text-xl font-semibold text-[#FF7F50] mb-4">
-              Why Donate?
+              Why donate?
             </h3>
             <p className="text-[#0B0C0C]">
               Your contribution funds the development of a citizen-owned app -

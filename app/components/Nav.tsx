@@ -31,6 +31,14 @@ export default function Nav() {
           </li>
           <li>
             <Link
+              href="/issues"
+              className="text-white font-medium no-underline hover:text-[#FFF5F2] transition-colors"
+            >
+              Issues
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/blog"
               className="text-white font-medium no-underline hover:text-[#FFF5F2] transition-colors"
             >
@@ -92,6 +100,7 @@ export default function Nav() {
           <ul className="list-none m-0 p-0 flex flex-col gap-4">
             {[
               { href: "/#about", label: "About" },
+              { href: "/issues", label: "Issues" },
               { href: "/blog", label: "Blog" },
               { href: "/#donate", label: "Donate" },
               { href: "/contact", label: "Contact" },

@@ -73,13 +73,19 @@ export default async function BlogPost({ params }: Props) {
         </div>
       </article>
 
-      {/* Back link */}
-      <div className="px-6 pb-20 max-w-[680px] mx-auto">
+      {/* Footer links */}
+      <div className="px-6 pb-20 max-w-[680px] mx-auto flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
         <Link
           href="/blog"
           className="text-[#FF7F50] no-underline hover:text-[#E66B3D] font-semibold"
         >
           ← Back to Blog
+        </Link>
+        <Link
+          href="/issues"
+          className="inline-block border-2 border-[#FF7F50] text-[#FF7F50] font-semibold px-6 py-2 hover:bg-[#FFF5F2] transition-colors no-underline text-sm"
+        >
+          See the six issues we think matter
         </Link>
       </div>
     </>
