@@ -65,10 +65,12 @@ export default async function BlogPost({ params }: Props) {
 
       {/* Content */}
       <article className="py-16 px-6">
-        <div
-          className="max-w-[680px] mx-auto prose prose-lg max-w-none prose-p:leading-[1.8] prose-p:mb-5 prose-p:text-[#0B0C0C] prose-h2:text-[#FF7F50] prose-h2:font-bold prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-[#0B0C0C] prose-a:text-[#FF7F50] prose-a:no-underline hover:prose-a:underline prose-strong:text-[#0B0C0C] prose-li:leading-[1.8] prose-li:text-[#0B0C0C]"
-          dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-        />
+        <div className="max-w-[680px] mx-auto">
+          <div
+            className="prose prose-lg max-w-none prose-p:leading-[1.8] prose-p:mb-5 prose-p:text-[#0B0C0C] prose-h2:text-[#FF7F50] prose-h2:font-bold prose-h2:mt-10 prose-h2:mb-4 prose-h3:text-[#0B0C0C] prose-a:text-[#FF7F50] prose-a:no-underline hover:prose-a:underline prose-strong:text-[#0B0C0C] prose-li:leading-[1.8] prose-li:text-[#0B0C0C]"
+            dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+          />
+        </div>
       </article>
 
       {/* Back link */}
