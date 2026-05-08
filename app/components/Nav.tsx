@@ -23,10 +23,10 @@ export default function Nav() {
         <ul className="hidden md:flex gap-8 list-none m-0 p-0">
           <li>
             <Link
-              href="/#about"
+              href="/blog"
               className="text-white font-medium no-underline hover:text-[#FFF5F2] transition-colors"
             >
-              About
+              Blog
             </Link>
           </li>
           <li>
@@ -43,14 +43,6 @@ export default function Nav() {
               className="text-white font-medium no-underline hover:text-[#FFF5F2] transition-colors"
             >
               App
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/blog"
-              className="text-white font-medium no-underline hover:text-[#FFF5F2] transition-colors"
-            >
-              Blog
             </Link>
           </li>
           <li>
@@ -99,10 +91,9 @@ export default function Nav() {
         <div className="md:hidden bg-[#E66B3D] px-6 pb-4">
           <ul className="list-none m-0 p-0 flex flex-col gap-4">
             {[
-              { href: "/#about", label: "About" },
+              { href: "/blog", label: "Blog" },
               { href: "/issues", label: "Six issues" },
               { href: "/app", label: "App" },
-              { href: "/blog", label: "Blog" },
               { href: "/#donate", label: "Donate" },
             ].map((link) => (
               <li key={link.href}>

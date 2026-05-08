@@ -28,6 +28,12 @@ export default function Home() {
             </p>
           </div>
           <Link
+            href="/blog/welcome-to-ddd"
+            className="text-[#FF7F50] font-semibold hover:text-[#E66B3D] no-underline hover:underline block mb-8"
+          >
+            Read more about what we are building →
+          </Link>
+          <Link
             href="/issues"
             className="inline-block bg-[#FF7F50] text-white font-semibold px-8 py-3 hover:bg-[#E66B3D] transition-colors no-underline"
           >
@@ -37,7 +43,7 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about" className="py-20 px-6">
+      <section className="py-20 px-6">
         <div className="max-w-[680px] mx-auto">
           <h2 className="text-3xl font-bold text-[#FF7F50] mb-6">
             About the app
