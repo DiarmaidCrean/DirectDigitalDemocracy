@@ -53,14 +53,6 @@ export default function Nav() {
               Donate
             </Link>
           </li>
-          <li>
-            <Link
-              href="/contact"
-              className="text-white font-medium no-underline hover:text-[#FFF5F2] transition-colors"
-            >
-              Contact
-            </Link>
-          </li>
         </ul>
 
         {/* Mobile hamburger */}
@@ -103,7 +95,6 @@ export default function Nav() {
               { href: "/issues", label: "Issues" },
               { href: "/blog", label: "Blog" },
               { href: "/#donate", label: "Donate" },
-              { href: "/contact", label: "Contact" },
             ].map((link) => (
               <li key={link.href}>
                 <Link
