@@ -2,7 +2,7 @@
 title: "What democracy is actually for"
 date: "2026-05-03"
 order: 2
-excerpt: "In the 1870s, Charles Sanders Peirce asked how people who disagree ever arrive at shared truth. His answer was not to find a better authority. It was to commit to a process."
+excerpt: ""
 tags: [democracy, philosophy]
 ---
 
