@@ -9,6 +9,7 @@ export type PostMeta = {
   date: string;
   excerpt?: string;
   tags?: string[];
+  order: number;
 };
 
 export type Post = PostMeta & {
@@ -79,9 +80,10 @@ export function getAllPosts(): PostMeta[] {
         date: (meta.date as string) || "",
         excerpt: meta.excerpt as string | undefined,
         tags: meta.tags as string[] | undefined,
+        order: meta.order !== undefined ? parseInt(meta.order as string, 10) : 9999,
       };
     })
-    .sort((a, b) => (a.date < b.date ? 1 : -1));
+    .sort((a, b) => a.order - b.order);
 }
 
 export function getPostBySlug(slug: string): Post | null {

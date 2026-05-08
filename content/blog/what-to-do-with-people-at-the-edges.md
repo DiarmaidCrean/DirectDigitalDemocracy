@@ -1,6 +1,7 @@
 ---
 title: "What to do with people at the edges"
 date: "2026-05-04"
+order: 6
 excerpt: "One of the persistent risks in any model of digital democracy is that people drift into ideological dead ends. Direct digital democracy is not immune to this — but it can be designed to respond to it."
 tags: [democracy, design]
 ---

@@ -1,6 +1,7 @@
 ---
 title: "How can this change anything?"
 date: "2026-05-02"
+order: 7
 excerpt: "Every serious attempt to shift political power has faced the same question. Not whether the cause is just, but whether there is any realistic mechanism by which things actually change."
 tags: [democracy, politics]
 ---

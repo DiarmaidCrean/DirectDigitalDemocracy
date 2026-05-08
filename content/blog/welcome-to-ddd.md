@@ -1,6 +1,7 @@
 ---
 title: "Welcome to Direct Digital Democracy"
 date: "2025-04-03"
+order: 8
 excerpt: "An introduction to what we're building and why it matters for the future of democratic participation."
 tags: [democracy, launch]
 ---
