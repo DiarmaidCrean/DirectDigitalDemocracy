@@ -14,6 +14,7 @@ export type PostMeta = {
 
 export type Post = PostMeta & {
   contentHtml: string;
+  order: number;
 };
 
 function parseFrontmatter(raw: string): {
@@ -109,6 +110,7 @@ export function getPostBySlug(slug: string): Post | null {
     date: (meta.date as string) || "",
     excerpt: meta.excerpt as string | undefined,
     tags: meta.tags as string[] | undefined,
+    order: meta.order !== undefined ? parseInt(meta.order as string, 10) : 9999,
     contentHtml,
   };
 }
