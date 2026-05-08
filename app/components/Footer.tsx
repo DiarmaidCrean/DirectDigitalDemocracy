@@ -23,14 +23,6 @@ export default function Footer() {
           >
             Contact
           </Link>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-orange-100 hover:text-white no-underline text-sm transition-colors"
-          >
-            GitHub
-          </a>
         </div>
       </div>
     </footer>
