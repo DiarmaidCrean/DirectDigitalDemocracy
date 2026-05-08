@@ -50,12 +50,19 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-[#FF7F50] mb-6">
             About the app
           </h2>
-          <p className="text-[#0B0C0C] text-lg leading-relaxed">
-            Direct Digital Democracy is built by a small group of people with
-            many years experience building digital services for the NHS,
-            government and the private sector. They want to put that experience
-            to work for citizens.
+          <p className="text-[#0B0C0C] text-lg leading-relaxed mb-4">
+            The website is the starting point. It is where the movement is
+            built and where the six issues are deliberated. The app - built to
+            GDS standards, open source, and freely available - is what active
+            DDD participants will use to vote, rank, and engage. It gets built
+            when there is enough support to build it properly.
           </p>
+          <Link
+            href="/app"
+            className="text-[#FF7F50] font-semibold hover:text-[#E66B3D] no-underline hover:underline"
+          >
+            Find out how the app will be built →
+          </Link>
         </div>
       </section>
 

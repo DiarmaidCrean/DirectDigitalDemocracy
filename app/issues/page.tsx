@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import InfluenceForm from "../components/InfluenceForm";
 
 export const metadata: Metadata = {
-  title: "The six issues - Direct Digital Democracy",
+  title: "Six ideas. Where the conversation starts - Direct Digital Democracy",
   description:
     "Six issues a sufficiently large and organised citizen body could realistically force onto the political agenda. These are a starting point. The community decides the final six.",
 };
@@ -12,7 +12,7 @@ const issues = [
     number: "1",
     title: "Reform the House of Lords",
     description:
-      "Rescind the parliamentary approval of ten members of the House of Lords each year. DDD participants vote and rank their preferences to decide who should go.",
+      "Withdraw the parliamentary approval of ten members of the House of Lords each year. DDD participants vote and rank their preferences to decide who should go.",
     context:
       "The House of Lords has 800 members. Nobody elected them. Many were appointed by the prime ministers they served. This proposal does not abolish the Lords. It begins returning it to democratic accountability, one year at a time, through citizen choice rather than party patronage.",
   },
@@ -65,7 +65,7 @@ export default function IssuesPage() {
       <section className="pt-32 py-20 bg-[#FFF5F2] px-6">
         <div className="max-w-[680px] mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-[#FF7F50] mb-6">
-            These are not our six. They are a starting point.
+            Six ideas. Where the conversation starts.
           </h1>
           <div className="text-lg text-[#505A5A] space-y-4">
             <p>

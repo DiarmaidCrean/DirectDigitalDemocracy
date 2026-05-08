@@ -39,6 +39,14 @@ export default function Nav() {
           </li>
           <li>
             <Link
+              href="/app"
+              className="text-white font-medium no-underline hover:text-[#FFF5F2] transition-colors"
+            >
+              App
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/blog"
               className="text-white font-medium no-underline hover:text-[#FFF5F2] transition-colors"
             >
@@ -93,6 +101,7 @@ export default function Nav() {
             {[
               { href: "/#about", label: "About" },
               { href: "/issues", label: "Issues" },
+              { href: "/app", label: "App" },
               { href: "/blog", label: "Blog" },
               { href: "/#donate", label: "Donate" },
             ].map((link) => (
