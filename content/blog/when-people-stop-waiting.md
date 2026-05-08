@@ -9,7 +9,7 @@ There are places in England where politics has not so much failed as been quietl
 
 What came through in those interviews was not ignorance or disengagement in any simple sense. It was an active judgement that the political process was not for them - that it was a performance staged by people who did not know them, had never lived near them, and would not be affected by whatever they decided.
 
-Into that space, two things had moved. One was simple withdrawal: people who had voted all their lives quietly stopped. The other was Reform. Not because its policies had been carefully weighed, but because it offered something the mainstream parties had stopped providing: a story about who was to blame and why it made sense. The immigration narrative, the hotels, the sense of being deprioritised - these were not primarily factual claims. They were moral ordering. They said: your anger is legitimate, here is its target.
+Into that space, two things had moved. One was simple withdrawal: people who had voted all their lives quietly stopped. The other was Reform. Not because its policies had been carefully weighed, but because it offered something the mainstream parties had stopped providing: a simple account of why things had gone wrong and who was responsible for it. The immigration narrative, the hotels, the sense of being deprioritised - these were not primarily factual claims. They were moral ordering.
 
 This is the environment that any serious democratic renewal project has to reckon with.
 
