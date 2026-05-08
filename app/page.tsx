@@ -111,7 +111,7 @@ export default function Home() {
               Your contribution will help us build a more democratic future.
             </p>
             <a
-              href="https://www.crowdfunder.co.uk/p/ddd"
+              href="https://patreon.com/directdigitaldemocracy"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#FF7F50] text-white font-semibold text-lg px-8 py-4 hover:bg-[#E66B3D] transition-colors no-underline"
@@ -119,7 +119,7 @@ export default function Home() {
               ♥ Donate Now ↗
             </a>
             <p className="mt-3 text-sm text-[#505A5A]">
-              Opens in a new tab · Secure payment via Crowdfunder
+              Opens in a new tab · via Patreon
             </p>
           </div>
         </div>

@@ -146,7 +146,7 @@ export default function AppPage() {
             contribution moves the start date forward.
           </p>
           <a
-            href="https://www.crowdfunder.co.uk/p/ddd"
+            href="https://patreon.com/directdigitaldemocracy"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-[#FF7F50] text-white font-semibold text-lg px-8 py-4 hover:bg-[#E66B3D] transition-colors no-underline"
@@ -154,7 +154,7 @@ export default function AppPage() {
             ♥ Donate Now ↗
           </a>
           <p className="mt-3 text-sm text-[#505A5A]">
-            Opens in a new tab · Secure payment via Crowdfunder
+            Opens in a new tab · via Patreon
           </p>
           <p className="mt-12 text-[#505A5A]">
             <a
