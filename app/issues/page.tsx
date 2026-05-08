@@ -10,27 +10,27 @@ export const metadata: Metadata = {
 const issues = [
   {
     number: "1",
-    title: "Reform the House of Lords",
-    description:
-      "Withdraw the parliamentary approval of ten members of the House of Lords each year. DDD participants vote and rank their preferences to decide who should go.",
-    context:
-      "The House of Lords has 800 members. Nobody elected them. Many were appointed by the prime ministers they served. This proposal does not abolish the Lords. It begins returning it to democratic accountability, one year at a time, through citizen choice rather than party patronage.",
-  },
-  {
-    number: "2",
-    title: "Arms sales accountability",
-    description:
-      "If a country is sanctioned by the UN, ICC, or equivalent international body, DDD participants can vote to remove any existing parliamentary approval for arms sales to that country.",
-    context:
-      "The UK currently sells arms to governments under active international sanction. Those decisions are made behind closed doors with no meaningful citizen input. This proposal creates a direct mechanism for citizens to withdraw approval when the international community has already judged a government's conduct unacceptable.",
-  },
-  {
-    number: "3",
     title: "Citizens set spending priorities",
     description:
       "Every year, citizens decide how much weight to give each area of government spending - how much goes to health, how much to defence, how much to housing and education. Government fills in the detail, but the proportions are set by the public, not the Treasury.",
     context:
       "The Chancellor currently decides how money is allocated across government with minimal democratic input between elections. This proposal does not ask citizens to write a budget line by line. It asks them to set the priorities - and holds government to delivering within them.",
+  },
+  {
+    number: "2",
+    title: "Clean money in politics",
+    description:
+      "Publicly funded campaigns as the only source of political party funding, with the exception of membership fees. No donor, corporation, or union can buy political influence.",
+    context:
+      "Large donors do not give money to political parties out of civic generosity. They give it because it works. This proposal removes the financial mechanism through which concentrated wealth shapes political outcomes, replacing it with public funding accountable to citizens rather than benefactors. Membership fees remain permitted - they represent citizens voluntarily supporting a party with their own money, which is different in kind from donor or corporate influence.",
+  },
+  {
+    number: "3",
+    title: "A citizens assembly with binding powers",
+    description:
+      "Once per parliamentary term, a randomly selected citizens assembly deliberates on one major issue and produces a recommendation that government is legally required to act on. Citizens do not just advise - they decide.",
+    context:
+      "Citizens assemblies have been used in Ireland and the UK with significant success, but their recommendations are advisory. Governments can ignore them. This proposal gives the process teeth - a randomly selected, evidence-informed group of citizens with the power to produce decisions that must be implemented.",
   },
   {
     number: "4",
@@ -42,19 +42,19 @@ const issues = [
   },
   {
     number: "5",
-    title: "Clean money in politics",
+    title: "Arms sales accountability",
     description:
-      "Publicly funded campaigns as the only source of political party funding, with the exception of membership fees. No donor, corporation, or union can buy political influence.",
+      "If a country is sanctioned by the UN, ICC, or equivalent international body, DDD participants can vote to remove any existing parliamentary approval for arms sales to that country.",
     context:
-      "Large donors do not give money to political parties out of civic generosity. They give it because it works. This proposal removes the financial mechanism through which concentrated wealth shapes political outcomes, replacing it with public funding accountable to citizens rather than benefactors. Membership fees remain permitted - they represent citizens voluntarily supporting a party with their own money, which is different in kind from donor or corporate influence.",
+      "The UK currently sells arms to governments under active international sanction. Those decisions are made behind closed doors with no meaningful citizen input. This proposal creates a direct mechanism for citizens to withdraw approval when the international community has already judged a government's conduct unacceptable.",
   },
   {
     number: "6",
-    title: "A citizens assembly with binding powers",
+    title: "Reform the House of Lords",
     description:
-      "Once per parliamentary term, a randomly selected citizens assembly deliberates on one major issue and produces a recommendation that government is legally required to act on. Citizens do not just advise - they decide.",
+      "Withdraw the parliamentary approval of ten members of the House of Lords each year. DDD participants vote and rank their preferences to decide who should go.",
     context:
-      "Citizens assemblies have been used in Ireland and the UK with significant success, but their recommendations are advisory. Governments can ignore them. This proposal gives the process teeth - a randomly selected, evidence-informed group of citizens with the power to produce decisions that must be implemented.",
+      "The House of Lords has 800 members. Nobody elected them. Many were appointed by the prime ministers they served. This proposal does not abolish the Lords. It begins returning it to democratic accountability, one year at a time, through citizen choice rather than party patronage.",
   },
 ];
 
