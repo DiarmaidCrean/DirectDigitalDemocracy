@@ -1,7 +1,7 @@
 ---
 title: "When people stop waiting to be heard"
 date: "2026-05-08"
-order: 2
+order: 3
 excerpt: "There are places in England where politics has not so much failed as been quietly abandoned. Understanding why matters for anyone serious about democratic renewal."
 tags: [democracy, politics]
 ---

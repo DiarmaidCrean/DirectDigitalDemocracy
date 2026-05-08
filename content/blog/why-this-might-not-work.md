@@ -1,7 +1,7 @@
 ---
 title: "Why this might not work - and why we're doing it anyway"
 date: "2026-05-06"
-order: 5
+order: 6
 excerpt: "The objections to direct digital democracy are serious. They deserve serious answers, not dismissal."
 tags: [democracy, design]
 ---

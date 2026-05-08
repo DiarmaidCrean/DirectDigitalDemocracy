@@ -1,29 +1,31 @@
 ---
 title: "Welcome to Direct Digital Democracy"
 date: "2025-04-03"
-order: 8
-excerpt: "An introduction to what we're building and why it matters for the future of democratic participation."
-tags: [democracy, launch]
+order: 1
+excerpt: "Something has gone wrong with politics. Not recently - gradually, over decades, in ways that are easy to feel but hard to name."
+tags: [democracy]
 ---
 
-## Why Direct Digital Democracy?
+Something has gone wrong with politics. Not recently - gradually, over decades, in ways that are easy to feel but hard to name.
 
-We live in an era where technology connects billions of people instantly, yet our democratic systems remain largely unchanged from centuries past. Citizens vote once every few years and then watch from the sidelines as decisions are made on their behalf.
+It is not that politicians are uniquely corrupt or that voters are uniquely apathetic. It is that the system connecting the two has quietly stopped working. Citizens vote every few years and then watch from the sidelines while decisions are made, interests are served, and the gap between what people want and what actually happens grows wider.
 
-We believe there is a better way.
+We think the mechanism needs rebuilding, not just the people inside it.
 
-## What We're Building
+## What we are doing
 
-Direct Digital Democracy is a citizen-owned platform that enables people to directly express their preferences on political issues — and have those preferences meaningfully heard by elected representatives.
+Direct Digital Democracy is building a platform for citizen coordination around a small number of issues - five at any one time - that citizens have decided matter most. The five are not fixed. They change when politics moves around them. But at any given moment they are specific, publicly known, and the basis for a clear ask of any candidate seeking election.
 
-This isn't about replacing representative democracy. It's about enhancing it. Giving MPs, councillors, and public officials a richer, more nuanced picture of what their constituents actually want.
+The idea is straightforward. Build a participant base large enough that any candidate who refuses to commit to giving these five issues binding precedence in government knows they will lose support they cannot afford to lose. Make the cost of ignoring organised citizens higher than the cost of responding to them.
 
-## Who We Are
+This is how democratic pressure has always worked. We are building the infrastructure to make it work again.
 
-Our team brings together decades of experience building some of the UK's most trusted public digital services — from NHS.uk to GOV.UK. We know how to build things that work for real people, at scale, with security and privacy at the core.
+## What we are not doing
 
-## What's Next
+This is not a new party. It is not a campaign for a single issue. It is not a petition platform or a polling tool. It is not asking you to trust us - it is asking you to help build something that does not need to be trusted because it is transparent, open, and answerable to its participants.
 
-We're in the early stages. Right now we want to hear from you. **What issue would you most want direct political influence over?** Use the form on our homepage to tell us.
+## Where we are now
 
-Your input directly shapes what we build next.
+We are at the beginning. The deliberation cannot happen at scale until the scale exists. Right now the most important thing is simple: tell us what issue you think should be one of the five. Use the form on the homepage. Your answer shapes what this becomes.
+
+If you think it matters, sign up. If you want to help build it, donate. The mechanism only works if enough people decide it is worth making work.

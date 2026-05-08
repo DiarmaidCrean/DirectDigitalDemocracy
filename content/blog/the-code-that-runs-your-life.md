@@ -1,7 +1,7 @@
 ---
 title: "The code that runs your life"
 date: "2026-05-07"
-order: 3
+order: 4
 excerpt: "The public square is no longer public. It is fragmented, shaped in secret, and quietly adjusted by algorithms designed to maximise engagement — which turns out to mean maximising outrage, division, and fear."
 tags: [democracy, technology]
 ---

@@ -34,7 +34,7 @@ export default async function BlogPost({ params }: Props) {
     <>
       {/* Hero */}
       <section className="pt-32 pb-12 px-6 bg-[#FFF5F2]">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-[780px] mx-auto">
           <div className="flex items-center gap-3 mb-4">
             <Link
               href="/blog"
@@ -64,15 +64,15 @@ export default async function BlogPost({ params }: Props) {
       </section>
 
       {/* Content */}
-      <article className="py-12 px-6">
+      <article className="py-16 px-6">
         <div
-          className="max-w-3xl mx-auto prose prose-lg prose-headings:text-[#0B0C0C] prose-a:text-[#FF7F50] prose-a:no-underline hover:prose-a:underline"
+          className="max-w-[780px] mx-auto prose prose-lg prose-headings:text-[#0B0C0C] prose-a:text-[#FF7F50] prose-a:no-underline hover:prose-a:underline prose-p:leading-relaxed prose-p:mb-6 prose-h2:mt-12 prose-h2:mb-4"
           dangerouslySetInnerHTML={{ __html: post.contentHtml }}
         />
       </article>
 
       {/* Back link */}
-      <div className="px-6 pb-16 max-w-3xl mx-auto">
+      <div className="px-6 pb-20 max-w-[780px] mx-auto">
         <Link
           href="/blog"
           className="text-[#FF7F50] no-underline hover:text-[#E66B3D] font-semibold"

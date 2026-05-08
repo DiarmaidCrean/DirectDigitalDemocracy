@@ -1,7 +1,7 @@
 ---
 title: "Extraction by design"
 date: "2026-05-05"
-order: 4
+order: 5
 excerpt: "The governing systems of this country have been shaped, over decades, to serve the interests of those who benefit from extraction rather than those who bear its costs."
 tags: [democracy, politics]
 ---
