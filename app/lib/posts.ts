@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { marked } from "marked";
 
 const POSTS_DIR = path.join(process.cwd(), "content", "blog");
 
@@ -44,22 +45,7 @@ function parseFrontmatter(raw: string): {
 }
 
 function markdownToHtml(md: string): string {
-  return md
-    .replace(/^# (.+)$/gm, "<h1>$1</h1>")
-    .replace(/^## (.+)$/gm, "<h2>$1</h2>")
-    .replace(/^### (.+)$/gm, "<h3>$1</h3>")
-    .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
-    .replace(/\*(.+?)\*/g, "<em>$1</em>")
-    .replace(/\[(.+?)\]\((.+?)\)/g, '<a href="$2">$1</a>')
-    .replace(/^> (.+)$/gm, "<blockquote>$1</blockquote>")
-    .replace(/^- (.+)$/gm, "<li>$1</li>")
-    .replace(/(<li>[\s\S]+?<\/li>)/g, "<ul>$1</ul>")
-    .split(/\n\n+/)
-    .map((block) => {
-      if (/^<[h|u|b|li]/.test(block.trim())) return block.trim();
-      return `<p>${block.trim()}</p>`;
-    })
-    .join("\n");
+  return marked.parse(md) as string;
 }
 
 export function getAllPosts(): PostMeta[] {
