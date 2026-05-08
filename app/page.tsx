@@ -53,9 +53,10 @@ export default function Home() {
           <p className="text-[#0B0C0C] text-lg leading-relaxed mb-4">
             The website is the starting point. It is where the movement is
             built and where the six issues are deliberated. The app - built to
-            GDS standards, open source, and freely available - is what active
-            DDD participants will use to vote, rank, and engage. It gets built
-            when there is enough support to build it properly.
+            the highest standard for citizen-facing digital services in the UK
+            - is what active DDD participants will use to vote, rank, and
+            engage. It gets built when there is enough support to build it
+            properly.
           </p>
           <Link
             href="/app"
