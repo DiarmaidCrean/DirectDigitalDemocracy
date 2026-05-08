@@ -87,31 +87,47 @@ export default function Home() {
             Support our mission
           </h2>
           <p className="text-lg text-[#505A5A] mb-8">
-            Help build a more democratic future. Your contribution will
-            directly support the development of an app that will enable more
-            citizens to participate in democratic decision-making.
+            Every contribution moves the app build date forward. Choose the
+            level of involvement that suits you.
           </p>
 
-          <div className="bg-white p-6 border border-[#B1B4B6] mb-6">
-            <h3 className="text-xl font-semibold text-[#FF7F50] mb-4">
-              Why donate?
-            </h3>
-            <p className="text-[#0B0C0C]">
-              Your contribution funds the development of a citizen-owned app -
-              open source, secure, and answerable to no party or interest
-              group.
-            </p>
+          <div className="space-y-4 mb-8">
+            <div className="bg-white p-6 border border-[#B1B4B6]">
+              <h3 className="text-lg font-bold text-[#FF7F50] mb-1">
+                Supporter — £3 per month
+              </h3>
+              <p className="text-[#0B0C0C]">You are funding the movement.</p>
+            </div>
+            <div className="bg-white p-6 border border-[#B1B4B6]">
+              <h3 className="text-lg font-bold text-[#FF7F50] mb-1">
+                Participant — £10 per month
+              </h3>
+              <p className="text-[#0B0C0C]">
+                Part of the early beta testing for the app before it launches,
+                plus regular updates on progress and how donations are being
+                used.
+              </p>
+            </div>
+            <div className="bg-white p-6 border border-[#B1B4B6]">
+              <h3 className="text-lg font-bold text-[#FF7F50] mb-1">
+                Founding member — £25 per month
+              </h3>
+              <p className="text-[#0B0C0C]">
+                Everything in Participant, plus a seat on the citizen
+                assessment panel. At each phase of the app build - discovery,
+                alpha, and beta - founding members review progress, challenge
+                assumptions, and decide whether the team is ready to move
+                forward.
+              </p>
+            </div>
           </div>
 
           <div className="bg-white p-8 border border-[#B1B4B6]">
-            <h3 className="text-xl font-semibold text-[#FF7F50] mb-3">
-              Ready to support our mission?
-            </h3>
             <p className="text-lg text-[#505A5A] mb-6">
-              Your contribution will help us build a more democratic future.
+              Join on Patreon and choose your level of involvement.
             </p>
             <a
-              href="https://patreon.com/directdigitaldemocracy"
+              href="https://www.patreon.com/c/directdigitaldemocracy"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-[#FF7F50] text-white font-semibold text-lg px-8 py-4 hover:bg-[#E66B3D] transition-colors no-underline"
@@ -119,7 +135,7 @@ export default function Home() {
               ♥ Donate Now ↗
             </a>
             <p className="mt-3 text-sm text-[#505A5A]">
-              Opens in a new tab · via Patreon
+              Via Patreon
             </p>
           </div>
         </div>
