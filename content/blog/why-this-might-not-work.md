@@ -28,4 +28,4 @@ Continuous accountability rather than one-shot decisions - policies tracked agai
 
 And cryptographic tools that allow participation to be verified without surveillance - so the system can confirm you are a real, eligible person without knowing or storing who you are.
 
-None of this is utopia. It is democracy redesigned with full awareness of human imperfection - cautious, reversible, and built to learn from its mistakes. The question is not whether direct digital democracy can be made perfect. It cannot. The question is whether it can be made better than what we have. On that question, the case is strong.
+None of this is utopia. It is democracy redesigned with full awareness of human imperfection - cautious, reversible, and built to learn from its mistakes. The question is not whether direct digital democracy can be made perfect. It cannot. The question is whether it can be made better than what we have. On that question, the case is strong. For a more detailed look at the specific mechanisms that make this possible, see [Designed for human imperfection](/blog/designed-for-human-imperfection).
