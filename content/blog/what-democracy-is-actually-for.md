@@ -16,7 +16,7 @@ Both men were grappling with the same difficulty that still haunts us: how do so
 
 This is what direct digital democracy is actually for.
 
-Not to count votes more quickly. Not to replace parliaments with apps. Not to give everyone a button to press on every decision. The underlying purpose is to create a durable arena where differences become generative rather than merely divisive - where citizens can propose, test, and refine positions, and where outcomes are continuously subjected to feedback rather than frozen into permanent winners and losers.
+Not to count votes more quickly. Not to replace parliaments with apps. Not to give everyone a button to press on every decision. The underlying purpose is to create a space where disagreement leads somewhere rather than just dividing people further - where citizens can propose, test, and refine positions, and where outcomes are continuously subjected to feedback rather than frozen into permanent winners and losers.
 
 Peirce believed that truth and rightness are not owned by any authority but discovered through ongoing communal inquiry. The mechanisms of a well-designed direct democracy - citizen panels, deliberative spaces, transparent voting, continuous accountability - are tools for exactly that kind of inquiry. They resist belief fixed by coercion, habit, or manipulation, and insist instead on the harder discipline of evidence and honest engagement.
 
