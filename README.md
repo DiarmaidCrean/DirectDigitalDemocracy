@@ -1,62 +1,36 @@
-# Direct Digital Democracy Website
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A modern, responsive website for the Direct Digital Democracy platform, built with HTML, CSS, and JavaScript.
+## Getting Started
 
-## Features
+First, run the development server:
 
-- Responsive design that works on all devices
-- Modern UI with smooth animations
-- Interactive navigation
-- Mobile-friendly layout
-- Fast loading times
-
-## Setup Instructions
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/DirectDigitalDemocracy.git
-cd DirectDigitalDemocracy
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-2. Open the project in your preferred code editor
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-3. Start a local development server:
-```bash
-# Using Python
-python -m http.server 8000
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-# Using Node.js
-npx serve
-```
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-4. Open your browser and navigate to `http://localhost:8000`
+## Learn More
 
-## Project Structure
+To learn more about Next.js, take a look at the following resources:
 
-```
-DirectDigitalDemocracy/
-├── index.html          # Main HTML file
-├── src/
-│   ├── css/
-│   │   └── styles.css  # Main stylesheet
-│   ├── js/
-│   │   └── main.js     # Main JavaScript file
-│   └── images/         # Image assets
-└── README.md           # Project documentation
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Contributing
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Deploy on Vercel
 
-## License
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contact
-
-For any questions or suggestions, please open an issue in the repository.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Coral background -->
+    <rect width="500" height="500" fill="#FF7F50"/>
+    
+    <!-- White square for logo -->
+    <rect x="100" y="100" width="300" height="300" fill="white" rx="10" ry="10"/>
+    
+    <!-- Logo -->
+    <g transform="translate(50, 50)">
+        <!-- Border -->
+        <rect x="75" y="75" width="250" height="250" fill="none" stroke="#FF7F50" stroke-width="8"/>
+        
+        <!-- D -->
+        <text x="110" y="255" font-size="200" fill="#FF7F50" font-family="Arial, sans-serif" font-weight="bold">D</text>
+        
+        <!-- 3 -->
+        <text x="255" y="155" font-size="85" fill="#FF7F50" font-family="Arial, sans-serif" font-weight="bold">3</text>
+    </g>
+</svg> 

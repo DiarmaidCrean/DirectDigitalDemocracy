@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Direct Digital Democracy</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <!-- GDS Transport font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" style="display: flex; align-items: center;">
+                <div style="background-color: white; padding: 0.5rem; border-radius: 4px;">
+                    <img src="src/images/logo.svg" alt="D³ Logo" style="height: 40px;">
+                </div>
+                <span style="color: white; margin-left: 1rem; font-weight: 600;">Direct Digital Democracy</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html.local#about">About</a></li>
+                <li><a href="index.html.local#donate">Donate</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Contact Us</h1>
+            <p>Have questions or want to get involved? We'd love to hear from you.</p>
+        </section>
+
+        <section class="govuk-section" style="background-color: #f8f8f8; padding: 3rem 5%;">
+            <div class="govuk-grid">
+                <div class="govuk-grid-column-two-thirds">
+                    <div class="govuk-card" style="background-color: white; padding: 2rem;">
+                        <h2 style="color: var(--coral-primary); margin-bottom: 1.5rem;">Send us a message</h2>
+                        <form id="contact-form" style="margin-top: 2rem;">
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--coral-primary);">Your email</label>
+                                <input type="email" id="email" name="email" style="width: 100%; padding: 0.75rem; border: 2px solid var(--border-color); font-family: inherit; font-size: 1rem;" required placeholder="Your email" autocomplete="email">
+                            </div>
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="message" style="display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--coral-primary);">Your message</label>
+                                <textarea id="message" name="message" rows="6" style="width: 100%; padding: 0.75rem; border: 2px solid var(--border-color); font-family: inherit; font-size: 1rem;" required placeholder="What would you like to tell us?"></textarea>
+                            </div>
+                            <div style="text-align: right;">
+                                <button type="submit" class="govuk-button" style="margin-top: 1rem;">
+                                    Send Message
+                                </button>
+                            </div>
+                            <div id="form-success" style="display: none; color: #00703C; background-color: #F3F9F5; padding: 1rem; margin-top: 1rem; border-left: 5px solid #00703C;">
+                                Thank you for your message! We'll get back to you soon.
+                            </div>
+                            <div id="form-error" style="display: none; color: #D4351C; background-color: #FEF7F7; padding: 1rem; margin-top: 1rem; border-left: 5px solid #D4351C;">
+                                Sorry, there was an error sending your message. Please try again later.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <p>© 2024 Direct Digital Democracy. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#contact" class="social-link"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/js/main.js"></script>
+    
+    <!-- Direct form handler script -->
+    <script>
+        // Wait for the document to be fully loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Direct form handler script loaded');
+            
+            // Get the form element
+            const form = document.getElementById('contact-form');
+            
+            if (form) {
+                console.log('Form found by direct handler');
+                
+                // Add submit event listener
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    console.log('Form submitted via direct handler');
+                    
+                    // Get form values
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+                    
+                    // Show thank you message directly
+                    form.innerHTML = `
+                        <div style="text-align: center; padding: 2rem 0;">
+                            <div style="font-size: 3rem; color: #00703C; margin-bottom: 1rem;">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h3 style="color: #00703C; margin-bottom: 1rem;">Thank You!</h3>
+                            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                                We've received your message and will get back to you soon.
+                            </p>
+                            <button type="button" id="submit-another-direct" class="govuk-button" style="margin-top: 1rem;">
+                                Send Another Message
+                            </button>
+                        </div>
+                    `;
+                    
+                    // API submission (will still happen in the background)
+                    fetch('http://localhost:8000/api/submit-contact', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        mode: 'cors',
+                        body: JSON.stringify({
+                            email: email,
+                            message: message
+                        }),
+                    }).then(response => {
+                        console.log('API response from direct handler:', response.status);
+                    }).catch(error => {
+                        console.error('API error from direct handler:', error);
+                    });
+                    
+                    // Add event listener for the "submit another" button
+                    setTimeout(function() {
+                        const reloadButton = document.getElementById('submit-another-direct');
+                        if (reloadButton) {
+                            reloadButton.addEventListener('click', function() {
+                                window.location.reload();
+                            });
+                        }
+                    }, 100);
+                });
+            } else {
+                console.error('Form not found by direct handler');
+            }
+        });
+    </script>
+</body>
+</html> 

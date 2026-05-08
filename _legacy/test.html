@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .test-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea, input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #2563eb;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .message {
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 4px;
+            display: none;
+        }
+        .success {
+            background-color: #F3F9F5;
+            color: #00703C;
+            border-left: 5px solid #00703C;
+        }
+        .error {
+            background-color: #FEF7F7;
+            color: #D4351C;
+            border-left: 5px solid #D4351C;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-form">
+        <h2>Test Form</h2>
+        <form id="feedback-form">
+            <div>
+                <label for="influence">What would you like direct influence over?</label>
+                <textarea id="influence" name="influence" rows="4" required></textarea>
+            </div>
+            <div>
+                <label for="email">Email address:</label>
+                <input type="email" id="email" name="email" required placeholder="Your email">
+            </div>
+            <button type="submit">Submit</button>
+            <div id="form-success" class="message success">
+                Thank you for your submission! We value your input.
+            </div>
+            <div id="form-error" class="message error">
+                Sorry, there was an error submitting your response. Please try again later.
+            </div>
+        </form>
+    </div>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html> 

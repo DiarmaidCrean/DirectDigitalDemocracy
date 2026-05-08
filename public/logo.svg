@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .logo-text { 
+            fill: #FF7F50; 
+            font-family: "GDS Transport", Arial, sans-serif; 
+            font-weight: bold;
+        }
+        .logo-border { 
+            fill: none; 
+            stroke: #FF7F50; 
+            stroke-width: 4;
+        }
+    </style>
+    <rect class="logo-border" x="10" y="10" width="180" height="180"/>
+    <text class="logo-text" x="40" y="135" font-size="140">D</text>
+    <text class="logo-text" x="135" y="70" font-size="60">3</text>
+</svg> 
