@@ -43,10 +43,10 @@ export default function Home() {
             About The App
           </h2>
           <p className="text-[#0B0C0C] text-lg leading-relaxed">
-            Direct Digital Democracy is built by people with considerable
-            experience building public and commercial digital services. They
-            want to put that experience to work for citizens rather than
-            institutions.
+            Direct Digital Democracy is built by a small group of people with
+            many years experience building digital services for the NHS,
+            government and the private sector. They want to put that experience
+            to work for citizens.
           </p>
         </div>
       </section>
