@@ -34,7 +34,7 @@ export default function Nav() {
               href="/issues"
               className="text-white font-medium no-underline hover:text-[#FFF5F2] transition-colors"
             >
-              Issues
+              Six issues
             </Link>
           </li>
           <li>
@@ -100,7 +100,7 @@ export default function Nav() {
           <ul className="list-none m-0 p-0 flex flex-col gap-4">
             {[
               { href: "/#about", label: "About" },
-              { href: "/issues", label: "Issues" },
+              { href: "/issues", label: "Six issues" },
               { href: "/app", label: "App" },
               { href: "/blog", label: "Blog" },
               { href: "/#donate", label: "Donate" },

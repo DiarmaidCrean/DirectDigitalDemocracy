@@ -27,20 +27,12 @@ export default function Home() {
               that isn&apos;t going away.
             </p>
           </div>
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href="#donate"
-              className="inline-block bg-[#FF7F50] text-white font-semibold px-8 py-3 hover:bg-[#E66B3D] transition-colors no-underline"
-            >
-              I support this
-            </Link>
-            <Link
-              href="/issues"
-              className="inline-block border-2 border-[#FF7F50] text-[#FF7F50] font-semibold px-8 py-3 hover:bg-[#FFF5F2] transition-colors no-underline"
-            >
-              See the six issues
-            </Link>
-          </div>
+          <Link
+            href="/issues"
+            className="inline-block bg-[#FF7F50] text-white font-semibold px-8 py-3 hover:bg-[#E66B3D] transition-colors no-underline"
+          >
+            See the six issues
+          </Link>
         </div>
       </section>
 
