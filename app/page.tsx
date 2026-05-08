@@ -17,8 +17,8 @@ export default function Home() {
               moment.
             </p>
             <p>
-              The idea is simple. Five issues. Chosen by citizens. Changed when
-              politics moves around them.
+              The idea is simple. Five issues. Directly decided by citizens.
+              Changed whenever the politics moves.
             </p>
             <p>
               If enough of us agreed on just five priorities and made our
