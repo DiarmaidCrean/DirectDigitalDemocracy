@@ -6,13 +6,24 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="pt-32 pb-16 px-6 text-center bg-[#FFF5F2]">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#FF7F50] mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#FF7F50] mb-6">
           Democratic Power In Your Hands
         </h1>
-        <p className="text-lg md:text-xl text-[#505A5A] mb-8 max-w-2xl mx-auto">
-          Build a citizen owned app to better instruct our elected political
-          leaders
-        </p>
+        <div className="text-lg text-[#505A5A] mb-8 max-w-2xl mx-auto space-y-4 text-left">
+          <p>
+            Influencing politics doesn&apos;t require voting on everything. It requires
+            enough people, focused on the right things, at the right moment.
+          </p>
+          <p>
+            The idea is simple. Five issues. Chosen by citizens. Changed when
+            politics moves around them.
+          </p>
+          <p>
+            If enough of us agreed on just five priorities and made our position
+            clear, the influence on the political process would be considerable.
+            A standing instruction from a citizen community that isn&apos;t going away.
+          </p>
+        </div>
         <Link
           href="#donate"
           className="inline-block bg-[#FF7F50] text-white font-semibold px-8 py-3 hover:bg-[#E66B3D] transition-colors no-underline"
@@ -27,12 +38,9 @@ export default function Home() {
           About The App
         </h2>
         <p className="text-[#0B0C0C] text-lg leading-relaxed">
-          Direct Digital Democracy brings together experts with many years of
-          experience who have protected your health and finance data from
-          continual cyber attacks, made it easier for you to work with public
-          sector through Gov.uk and NHS.UK and built some of the most successful
-          apps to help with your everyday lives. Now they would like your
-          support to put democracy in all our hands.
+          Direct Digital Democracy is built by people with considerable
+          experience building public and commercial digital services. They want
+          to put that experience to work for citizens rather than institutions.
         </p>
       </section>
 
@@ -45,7 +53,7 @@ export default function Home() {
             </h2>
             <div className="bg-white p-8 border border-[#B1B4B6]">
               <h3 className="text-xl font-semibold text-[#FF7F50] mb-6">
-                What issue would you want direct political influence over?
+                What would be your suggestion for one of the five? And why?
               </h3>
               <InfluenceForm />
             </div>
@@ -73,14 +81,11 @@ export default function Home() {
               <h3 className="text-xl font-semibold text-[#FF7F50] mb-4">
                 Why Donate?
               </h3>
-              <ul className="list-disc pl-5 space-y-2 text-[#0B0C0C]">
-                <li>Support open-source development of democratic tools</li>
-                <li>Help maintain and improve our secure voting system</li>
-                <li>Enable more communities to adopt direct democracy</li>
-                <li>
-                  Contribute to a more transparent and participatory future
-                </li>
-              </ul>
+              <p className="text-[#0B0C0C]">
+                Your contribution funds the development of a citizen-owned app
+                — open source, secure, and answerable to no party or interest
+                group.
+              </p>
             </div>
 
             <div className="bg-white p-8 border border-[#B1B4B6] text-center">
