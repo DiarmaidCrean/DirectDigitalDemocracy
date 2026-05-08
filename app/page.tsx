@@ -12,9 +12,9 @@ export default function Home() {
           </h1>
           <div className="text-lg text-[#505A5A] mb-8 space-y-4 text-center">
             <p>
-              Influencing politics doesn&apos;t require voting on everything. It
-              requires enough people, focused on the right things, at the right
-              moment.
+              Influencing politics doesn&apos;t require us voting on everything. It
+              just requires enough people, focused on the right things, at the
+              right moment.
             </p>
             <p>
               The idea is simple. Five issues. Directly decided by citizens.
