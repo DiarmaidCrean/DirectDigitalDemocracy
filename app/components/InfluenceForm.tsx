@@ -102,7 +102,7 @@ export default function InfluenceForm() {
         </div>
       )}
 
-      <div className="text-right">
+      <div className="text-center">
         <button
           type="submit"
           disabled={state === "submitting"}
