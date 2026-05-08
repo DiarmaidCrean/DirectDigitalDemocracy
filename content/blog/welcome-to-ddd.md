@@ -16,7 +16,7 @@ We think the mechanism needs rebuilding, not just the people inside it.
 
 Direct Digital Democracy is building a platform for citizen coordination around a small number of issues - six at any one time - that citizens have decided matter most. The six are not fixed. They change when politics moves around them. But at any given moment they are specific, publicly known, and the basis for a clear ask of any candidate seeking election.
 
-The idea is straightforward. Build a participant base large enough that any candidate who refuses to commit to giving these six issues binding precedence in government knows they will lose support they cannot afford to lose. Make the cost of ignoring organised citizens higher than the cost of responding to them.
+The idea is straightforward. Build a participant base large enough that any candidate MP who refuses to commit to giving these six issues binding precedence in government knows they will lose support they cannot afford to lose. Make the cost of ignoring organised citizens higher than the cost of responding to them.
 
 This is how democratic pressure has always worked. We are building the infrastructure to make it work again.
 

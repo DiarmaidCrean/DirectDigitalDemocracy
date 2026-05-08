@@ -70,8 +70,7 @@ export default function IssuesPage() {
           <div className="text-lg text-[#505A5A] space-y-4">
             <p>
               Direct Digital Democracy is built on a simple premise: citizens
-              should decide what matters most, not the people who built the
-              platform. The issues below are not a manifesto. They are six
+              should decide what matters most. The issues below are not a manifesto. They are six
               possibilities - the kind of decisions that a sufficiently large
               and organised citizen body could realistically force onto the
               political agenda.
