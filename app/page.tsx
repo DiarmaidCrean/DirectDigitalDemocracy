@@ -8,7 +8,7 @@ export default function Home() {
       <section className="pt-32 py-20 bg-[#FFF5F2] px-6">
         <div className="max-w-[680px] mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-[#FF7F50] mb-6">
-            Democratic Power In Your Hands
+            Democratic power in your hands
           </h1>
           <div className="text-lg text-[#505A5A] mb-8 space-y-4">
             <p>
@@ -40,7 +40,7 @@ export default function Home() {
       <section id="about" className="py-20 px-6">
         <div className="max-w-[680px] mx-auto">
           <h2 className="text-3xl font-bold text-[#FF7F50] mb-6">
-            About The App
+            About the app
           </h2>
           <p className="text-[#0B0C0C] text-lg leading-relaxed">
             Direct Digital Democracy is built by a small group of people with
@@ -70,7 +70,7 @@ export default function Home() {
       <section id="donate" className="py-20 px-6 bg-[#FFF5F2]">
         <div className="max-w-[680px] mx-auto">
           <h2 className="text-3xl font-bold text-[#FF7F50] mb-4">
-            Support Our Mission
+            Support our mission
           </h2>
           <p className="text-lg text-[#505A5A] mb-8">
             Help build a more democratic future. Your contribution will
@@ -91,7 +91,7 @@ export default function Home() {
 
           <div className="bg-white p-8 border border-[#B1B4B6]">
             <h3 className="text-xl font-semibold text-[#FF7F50] mb-3">
-              Ready to Support Our Mission?
+              Ready to support our mission?
             </h3>
             <p className="text-lg text-[#505A5A] mb-6">
               Your contribution will help us build a more democratic future.
