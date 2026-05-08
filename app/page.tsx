@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="pt-32 py-20 bg-[#FFF5F2] text-center px-6">
+      <section className="pt-32 py-20 bg-[#FFF5F2] px-6">
         <div className="max-w-[680px] mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-[#FF7F50] mb-6">
             Democratic Power In Your Hands
           </h1>
-          <div className="text-lg text-[#505A5A] mb-8 space-y-4 text-center">
+          <div className="text-lg text-[#505A5A] mb-8 space-y-4">
             <p>
               Influencing politics doesn&apos;t require us voting on everything. It
               just requires enough people, focused on the right things, at the
@@ -37,7 +37,7 @@ export default function Home() {
       </section>
 
       {/* About */}
-      <section id="about" className="py-20 px-6 text-center">
+      <section id="about" className="py-20 px-6">
         <div className="max-w-[680px] mx-auto">
           <h2 className="text-3xl font-bold text-[#FF7F50] mb-6">
             About The App
@@ -54,7 +54,7 @@ export default function Home() {
       {/* Influence Form */}
       <section className="py-20 px-6 bg-gray-50">
         <div className="max-w-[680px] mx-auto">
-          <h2 className="text-3xl font-bold text-[#0B0C0C] mb-8 text-center">
+          <h2 className="text-3xl font-bold text-[#0B0C0C] mb-8">
             First a simple question:
           </h2>
           <div className="bg-white p-8 border border-[#B1B4B6]">
@@ -69,10 +69,10 @@ export default function Home() {
       {/* Donate */}
       <section id="donate" className="py-20 px-6 bg-[#FFF5F2]">
         <div className="max-w-[680px] mx-auto">
-          <h2 className="text-3xl font-bold text-[#FF7F50] mb-4 text-center">
+          <h2 className="text-3xl font-bold text-[#FF7F50] mb-4">
             Support Our Mission
           </h2>
-          <p className="text-lg text-[#505A5A] mb-8 text-center">
+          <p className="text-lg text-[#505A5A] mb-8">
             Help build a more democratic future. Your contribution will
             directly support the development of an app that will enable more
             citizens to participate in democratic decision-making.
@@ -89,7 +89,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-white p-8 border border-[#B1B4B6] text-center">
+          <div className="bg-white p-8 border border-[#B1B4B6]">
             <h3 className="text-xl font-semibold text-[#FF7F50] mb-3">
               Ready to Support Our Mission?
             </h3>

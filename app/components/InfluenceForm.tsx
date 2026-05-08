@@ -34,7 +34,7 @@ export default function InfluenceForm() {
 
   if (state === "success") {
     return (
-      <div className="text-center py-8">
+      <div className="py-8">
         <div className="text-5xl text-[#00703C] mb-4">✓</div>
         <h3 className="text-[#00703C] text-xl font-semibold mb-3">
           Thank You!
@@ -102,7 +102,7 @@ export default function InfluenceForm() {
         </div>
       )}
 
-      <div className="text-center">
+      <div>
         <button
           type="submit"
           disabled={state === "submitting"}
