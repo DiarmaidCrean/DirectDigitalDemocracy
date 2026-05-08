@@ -2,7 +2,7 @@
 title: "The system that was destroyed because it worked"
 date: "2026-05-07"
 order: 11
-excerpt: "Project Cybersyn wasn't destroyed because it failed. It was destroyed because it demonstrated that economic power could be distributed to workers and citizens — and that was precisely what couldn't be allowed to stand."
+excerpt: "Project Cybersyn wasn't destroyed because it failed. It was destroyed because it demonstrated that economic power could be distributed to workers and citizens - and that was precisely what couldn't be allowed to stand."
 tags: [democracy, history]
 ---
 

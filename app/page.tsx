@@ -83,7 +83,7 @@ export default function Home() {
               Why Donate?
             </h3>
             <p className="text-[#0B0C0C]">
-              Your contribution funds the development of a citizen-owned app —
+              Your contribution funds the development of a citizen-owned app -
               open source, secure, and answerable to no party or interest
               group.
             </p>
