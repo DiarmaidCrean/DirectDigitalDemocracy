@@ -52,9 +52,9 @@ export default function Home() {
           </h2>
           <p className="text-[#0B0C0C] text-lg leading-relaxed mb-4">
             The website is the starting point. It is where the movement is
-            built and where the six issues are deliberated. The app - built to
+            built and where the six issues are collated. The app - built to
             the highest standard for citizen-facing digital services in the UK
-            - is what active DDD participants will use to vote, rank, and
+            - is where active DDD participants will deliberate, vote, rank, and
             engage. It gets built when there is enough support to build it
             properly.
           </p>
